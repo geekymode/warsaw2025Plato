@@ -1,0 +1,144 @@
+---
+title: "When Ancient Wisdom Meets Modern Wandering:A Plato signature on the walls"
+runningheader: "For pdf output" # only for pdf output
+subtitle: "How a chance encounter with Greek text on a library wall led to rediscovering one of history's most prescient critiques of technology" # only for html output
+author: "Rethna Pulikkoonattu"
+date: "2025-05-18"
+
+output:
+  tufte::tufte_html: default
+  tufte::tufte_handout:
+    citation_package: natbib
+    latex_engine: xelatex
+  tufte::tufte_book:
+    citation_package: natbib
+    latex_engine: xelatex
+bibliography: skeleton.bib
+link-citations: yes
+---
+
+```{r setup, include=FALSE,highlight=TRUE, background='#F7F7F7'}
+library(tufte)
+# invalidate cache when the tufte version changes
+knitr::opts_chunk$set(cache.extra = packageVersion('tufte'))
+options(htmltools.dir.version = FALSE)
+```
+
+
+# A pleasant Discovery
+I was in Warsaw last week for the IEEE 802.11 May 2025, interim meeting^[[IEEE802.11](https://www.ieee802.org/11/Reports/index.html)]. This is my fourth visit to Warsaw and the city is a spectacular blend of old and new. Walking through the streets, en route from my conference hotel, I stumbled upon something that would transform a casual stroll into an intellectual adventure. There, inscribed on the walls of Warsaw University's library, was a passage in ancient Greek that stopped me in my tracks:
+Ω ΤΕΧΝΙΚΩΤΑΤΕ ΘΕΥΘ, ΑΛΛΟΣ ΜΕΝ ΤΕΚΕΙΝ ΔΥΝΑΤΟΣ ΤΑ ΤΗΣ ΤΕΧΝΗΣ...
+
+```{r figPlato, fig.margin = TRUE, fig.cap = "A fanboy happily posing in front of the scribe. ", message=TRUE, cache=TRUE, echo=FALSE, out.width='100%'}
+knitr::include_graphics("/Users/rethna/projects/blog/warsaw_plato/warsaw_plato_rethna.jpg")
+```
+
+My previous reading in Greek classics came flooding back—I had explored Plato's Republic^[[The Republic is Plato's most famous and widely read dialogue](https://en.wikipedia.org/wiki/Republic_(Plato))] and other works, sparked initially by a chance encounter with Siddhartha Mukherjee's writings^[ [The Gene: An Intimate History](https://en.wikipedia.org/wiki/The_Gene:_An_Intimate_History)]. I must confess my knowledge of Plato^[ [Plato](https://plato.stanford.edu/entries/plato/)] remains quite limited, but it was just enough for me to recognize this as a passage from the Phaedrus^[see [Phaedrus dialogue](https://en.wikipedia.org/wiki/Phaedrus_(dialogue))], though I needed to confirm the specifics through further research. I found myself compelled to carefully transcribe the entire passage from the wall, letter by letter, driven by curiosity about what wisdom Warsaw's librarians had chosen to immortalize in stone.. I found myself compelled to carefully transcribe the entire passage from the wall, letter by letter, driven by curiosity about what wisdom Warsaw's librarians had chosen to immortalize in stone.
+
+
+```{r figWarsawCity, fig.margin = TRUE, fig.cap = "The iconic view of Warsaw. The Palace of Culture and Science [Pałac Kultury i Nauki](https://en.wikipedia.org/wiki/Palace_of_Culture_and_Science#:~:text=10%20External%20links-,Name,one%20of%20the%20building's%20sculptures.) ", message=TRUE, cache=TRUE, echo=FALSE, out.width='100%'}
+knitr::include_graphics("/Users/rethna/projects/blog/warsaw_plato/warsaw_city.jpg")
+```
+
+```{r figRainbow, fig.margin = TRUE, fig.cap = "A splendid double rainbow at Warsaw. ", message=TRUE, cache=TRUE, echo=FALSE, out.width='100%'}
+knitr::include_graphics("/Users/rethna/projects/blog/warsaw_plato/warsaw_rainbow.jpg")
+```
+# Decoding the Ancient Text
+
+Thank the heavens, and Don Knuth^[See [Don Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) and also [NYT article on the master](https://www.nytimes.com/2018/12/17/science/donald-knuth-computers-algorithms-programming.html)] for LaTeX^[Wiki [LaTeX](https://en.wikipedia.org/wiki/LaTeX)].  Scribing in TeX/LaTeX helped me accidentally be fluent in Greek letters - who knew typesetting math would turn me into a sorority house expert for absolutely nothing? Anyways, the passage I transcribed from the photo reads:
+
+`Ω ΤΕΧΝΙΚΩΤΑΤΕ ΘΕΥΘ, ΑΛΛΟΣ ΜΕΝ ΤΕΚΕΙΝ ΔΥΝΑΤΟΣ ΤΑ ΤΗΣ ΤΕΧΝΗΣ, ΑΛΛΟΣ ΔΕ ΚΡΙΝΑΙ ΤΙΝ' ΕΧΕΙ ΜΟΙΡΑΝ ΒΛΑΒΗΣ ΤΕ ΚΑΙ ΩΦΕΛΕΙΑΣ ΤΟΙΣ ΜΕΛΛΟΥΣΙ ΧΡΗΣΘΑΙ· ΚΑΙ ΝΥΝ ΣΥ, ΠΑΤΗΡ ΩΝ ΓΡΑΜΜΑΤΩΝ, ΔΙ' ΕΥΝΟΙΑΝ ΤΟΥΝΑΝΤΙΟΝ ΕΙΠΕΣ Η ΔΥΝΑΤΑΙ. ΤΟΥΤΟ ΓΑΡ ΤΩΝ ΜΑΘΟΝΤΩΝ ΛΗΘΗΝ ΜΕΝ ΕΝ ΨΥΧΑΙΣ ΠΑΡΕΞΕΙ ΜΝΗΜΗΣ ΑΜΕΛΕΤΗΣΙΑ, ΑΤΕ ΔΙΑ ΠΙΣΤΙΝ ΓΡΑΦΗΣ ΕΞΩΘΕΝ ΥΠ' ΑΛΛΟΤΡΙΩΝ ΤΥΠΩΝ, ΟΥΚ ΕΝΔΟΘΕΝ ΑΥΤΟΥΣ ΥΦ' ΑΥΤΩΝ ΑΝΑΜΙΜΝΗΣΚΟΜΕΝΟΥΣ· ΟΥΚΟΥΝ ΜΝΗΜΗΣ ΑΛΛ' ΥΠΟΜΝΗΣΕΩΣ ΦΑΡΜΑΚΟΝ ΕΥΡΕΣ.`
+
+The transliterate version in English goes like this:
+
+`o tekhnikotate theuth, allos men tekein dynatos ta tes tekhnes, allos de krinai tin' ekhei moiran blaves te kai opheleias tois mellousin khresthai; kai nyn sy, pater on grammaton, di' eunoian tounantion eipes e dynatai. touto gar ton mathonton lethen men en psykhais parexei mnemes ameletesia, ate dia pistin graphes exothen yp' allotrion typon, ouk endothen autous yph' auton anamimneskomenous; oukoun mnemes all' ypomniseos pharmakon eures`
+
+Breaking Down the Opening Line
+Let's examine the very first phrase more closely. In transliteration, it reads:
+`Ō tekhnikōtate Theuth, allos men tekein dynatos ta tēs tekhnēs`
+Each word reveals layers of meaning that illuminate Plato's careful word choice:
+
+* Ω (Ō) - An exclamatory "O!" expressing direct address with gravity
+* ΤΕΧΝΙΚΩΤΑΤΕ (tekhnikōtate) - The superlative form of "technical" or "skilled," meaning "most skilled" or "most ingenious." This is the root of our word "technology"
+* ΘΕΥΘ (Theuth) - The name of the Egyptian god, inventor of writing
+* ΑΛΛΟΣ (allos) - "Another" or "one person"
+ΜΕΝ (men) - A particle that sets up contrast (paired with δε later), meaning "on the one hand"
+* ΤΕΚΕΙΝ (tekein) - The infinitive "to give birth to" or "to create" - notably the same root as "technology"
+* ΔΥΝΑΤΟΣ (dynatos) - "Capable" or "able" (root of our "dynamic")
+* ΤΑ (ta) - The definite article "the"
+* ΤΗΣ (tēs) - "Of the" (genitive feminine)
+* ΤΕΧΝΗΣ (tekhnēs) - "Art" or "craft" or "skill" - again, the root of "technology"
+
+What's particularly striking is how Plato plays with the root word tekhnē (technique/art/craft) throughout this opening. We see it in tekhnikōtate (most skilled), tekein (to create), and tekhnēs (of the art). This repetition emphasizes that the dialogue is fundamentally about the relationship between technical skill and wisdom - between the ability to create and the ability to judge what should be created.
+
+
+```{r figPuzzle, fig.margin = FALSE, fig.cap = " A dialogue from Plato's Phaedrus scribed on the walls of Warsaw University library. `O most skilled Theuth, one person has the ability to create arts, while another to judge what measure of harm and benefit they hold for those who will use them. And now you, being the father of letters, through goodwill have claimed the opposite of what they can actually do. For this invention will produce forgetfulness in the souls of those who learn it, through neglect of memory, because relying on writing, which is external and depends on signs that belong to others, they will cease to exercise their memory and recall things from within themselves. You have discovered a drug not for memory but for reminding.` ", message=TRUE, cache=TRUE, echo=FALSE, out.width='100%'}
+knitr::include_graphics("/Users/rethna/projects/blog/warsaw_plato/warsaw_plato.jpg")
+```
+
+After consulting various translations and cross-referencing with the Gutenberg Project's English version of the Phaedrus, I found this rendering to be remarkably accurate:
+
+<p style="color: forestgreen;">
+**"O most skilled Theuth, one person has the ability to create arts, while another to judge what measure of harm and benefit they hold for those who will use them. And now you, being the father of letters, through goodwill have claimed the opposite of what they can actually do. For this invention will produce forgetfulness in the souls of those who learn it, through neglect of memory, because relying on writing, which is external and depends on signs that belong to others, they will cease to exercise their memory and recall things from within themselves. You have discovered a drug not for memory but for reminding."**
+</p>
+
+```{r figCopernicus, fig.margin = TRUE, fig.cap = "Nicolaus Copernicus, one of the all time Polish shining star is aptly stationed in the old town area stands tall in front of the Staszic Palace, the seat of the Polish Academy of Sciences on [[Krakowskie Przedmieście](https://en.wikipedia.org/wiki/Krakowskie_Przedmieście)].", message=TRUE, cache=TRUE, echo=FALSE, out.width='100%'}
+knitr::include_graphics("/Users/rethna/projects/blog/warsaw_plato/warsaw_copernicus.jpg")
+```
+
+
+```{r figChopin, fig.margin = TRUE, fig.cap = "Chopin museum[[Muzeum Fryderyka Chopina](https://en.wikipedia.org/wiki/Fryderyk_Chopin_Museum)]. Frédéric Chopin is Poland's absolute favorite son. I'd imagine Copernicus and Maria Skłodowska-Curie are right up there in the Polish hall of fame.", message=TRUE, cache=TRUE, echo=FALSE, out.width='100%'}
+knitr::include_graphics("/Users/rethna/projects/blog/warsaw_plato/warsaw_chopin.jpg")
+```
+
+# The Story Behind the Words
+
+This passage captures one of literature's most fascinating dialogues about technological innovation. In Plato's telling, the Egyptian god Theuth (inventor of mathematics, astronomy, and crucially, writing) approaches King Thamus to present his inventions. When Theuth boasts that writing will make people wiser and improve their memories, Thamus delivers this stinging rebuke.
+The king's argument is both simple and profound: the inventor of a technology is not necessarily the best judge of its ultimate effects. Writing, Thamus warns, will create a generation of people who mistake information for knowledge, who appear learned but lack true understanding, who rely on external aids rather than developing their internal faculties.
+
+```{r figBristolBF, fig.margin = TRUE, fig.cap = "View from the Cafe Bristol, in the corner of Bristol Hotel in Warsaw. In 1913, in Malinowa Restaurant there was a banquet in honour of Marie Curie, celebrating the second Nobel prize.", message=TRUE, cache=TRUE, echo=FALSE, out.width='100%'}
+knitr::include_graphics("/Users/rethna/projects/blog/warsaw_plato/warsaw_bristol_bf.jpg")
+```
+
+# A Critique That Echoes Through Time
+What makes this 2,400-year-old passage so striking is how eerily relevant it remains. Thamus's concerns about writing—that it would make people lazy thinkers, overly dependent on external sources, prone to superficial rather than deep knowledge—sound remarkably similar to contemporary debates about smartphones, search engines, and artificial intelligence.
+Consider how often we hear that GPS has diminished our sense of direction, that search engines have made us impatient with not knowing things instantly, or that social media has shortened our attention spans. Thamus would nod knowingly at these complaints.
+The king's distinction between memory and mere "reminding" feels particularly prescient in our age of externalized cognition. When we can Google any fact instantly, are we enhancing our memory or simply creating better reminding systems? When we rely on GPS rather than learning routes, are we navigating or just following prompts?
+
+
+# The Beautiful Irony
+Perhaps the most delicious irony of this entire encounter is that we only know about Thamus's critique of writing because Plato wrote it down. The very technology being criticized became the medium through which the criticism survived 2,400 years to reach a library wall in Warsaw, where a wandering traveler could photograph it, transcribe it, and share it globally via the internet.
+This paradox suggests something important about how we should approach new technologies. Neither uncritical adoption nor reflexive rejection serves us well. Instead, we need the kind of nuanced thinking that Plato himself demonstrated—using writing to preserve a critique of writing, showing us both its limitations and its power.
+
+# Lessons for Modern Times
+The Warsaw library's decision to inscribe this particular passage feels deliberate and wise. In an age of information overload, we need reminders that access to information is not the same as wisdom, that convenience can come with hidden costs, and that every technological advance involves trade-offs worth considering.
+Thamus's warning about people who "will appear to be omniscient and will generally know nothing" resonates strongly in our era of instant expertise and confident ignorance. The challenge isn't to reject new technologies but to use them thoughtfully, maintaining awareness of what we might be gaining and losing in the process.
+
+```{r figKafkaOut, fig.margin = TRUE, fig.cap = "Kaffe Kafka from outside. ", message=TRUE, cache=TRUE, echo=FALSE, out.width='100%'}
+knitr::include_graphics("/Users/rethna/projects/blog/warsaw_plato/warsaw_kafka_outside.jpg")
+```
+# A Serendipitous Reminder
+My chance encounter with ancient Greek on a Warsaw library wall serves as a reminder that wisdom often finds us in unexpected places. Sometimes the most profound insights about our current moment come from voices across millennia, preserved through the very technologies they once questioned.
+As I walked away from that library, I carried with me not just a transcribed passage but a renewed appreciation for the timeless nature of human concerns about change, progress, and the unintended consequences of innovation. In our rush toward the future, perhaps we need more walls with ancient wisdom, more moments of pause to consider what we're gaining and what we might be leaving behind.
+The gods Theuth and Thamus continue their dialogue through us, each generation wrestling anew with the promises and perils of its technologies. The conversation, thankfully, continues—preserved in writing, shared through networks, and discovered by wanderers in libraries around the world.
+
+```{r figKafkaIn, fig.margin = TRUE, fig.cap = "Kaffe Kafka from inside. ", message=TRUE, cache=TRUE, echo=FALSE, out.width='100%'}
+knitr::include_graphics("/Users/rethna/projects/blog/warsaw_plato/warsaw_kafka_inside.jpg")
+```
+
+# A final note
+
+A few years back, I stood at this exact same wall, but then I was so captivated by Maxwell's equations that I barely noticed the Greek text. Among other things, I'd walk past Copernicus daily in Old Town regardless of weather, grab cappuccinos at the historic 115-year-old Cafe Bristol (supposedly where Marie Curie celebrated her second Nobel!), and catch street performances of Chopin's music. 
+
+I still have to write more on the other interesting items on the wall, but is for another day!
+
+## References
+
+<a name="ref1"></a>
+1. Plato. "(2025). Phaedrus [Project Gutenberg eBook] (B. Jowett, Trans.). http://www.gutenberg.org/files/1636/1636-h/1636-h.htm. Original text written approximately 370 BC.".
+
+
+```{r bib, include=FALSE}
+# create a bib file for the R packages used in this document
+knitr::write_bib(c('base', 'rmarkdown'), file = 'skeleton.bib')
+```
