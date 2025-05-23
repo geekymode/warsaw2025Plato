@@ -1,7 +1,7 @@
 ---
 title: "When Ancient Wisdom Meets Modern Wandering:A Plato signature on the walls"
 runningheader: "For pdf output" # only for pdf output
-subtitle: "How a chance encounter with Greek text on a library wall led to rediscovering one of history's most prescient critiques of technology" # only for html output
+subtitle: "In and around Warsaw" # only for html output
 author: "Rethna Pulikkoonattu"
 date: "2025-05-18"
 
@@ -40,7 +40,7 @@ My previous reading in Greek classics came flooding back—I had explored Plato'
 knitr::include_graphics("/Users/rethna/projects/blog/warsaw_plato/warsaw_city.jpg")
 ```
 
-```{r figRainbow, fig.margin = TRUE, fig.cap = "A splendid double rainbow at Warsaw. ", message=TRUE, cache=TRUE, echo=FALSE, out.width='100%'}
+```{r figRainbow, fig.margin = TRUE, fig.cap = "A splendid double rainbow seen from the streets of Warsaw. Do you know why the second rainbow has the colors [inverted](https://scijinks.gov/rainbow/)?", message=TRUE, cache=TRUE, echo=FALSE, out.width='100%'}
 knitr::include_graphics("/Users/rethna/projects/blog/warsaw_plato/warsaw_rainbow.jpg")
 ```
 # Decoding the Ancient Text
@@ -78,16 +78,19 @@ knitr::include_graphics("/Users/rethna/projects/blog/warsaw_plato/warsaw_plato.j
 
 After consulting various translations and cross-referencing with the Gutenberg Project's English version of the Phaedrus, I found this rendering to be remarkably accurate:
 
+::: {.fullwidth}
 <p style="color: forestgreen;">
 **"O most skilled Theuth, one person has the ability to create arts, while another to judge what measure of harm and benefit they hold for those who will use them. And now you, being the father of letters, through goodwill have claimed the opposite of what they can actually do. For this invention will produce forgetfulness in the souls of those who learn it, through neglect of memory, because relying on writing, which is external and depends on signs that belong to others, they will cease to exercise their memory and recall things from within themselves. You have discovered a drug not for memory but for reminding."**
 </p>
+:::
 
-```{r figCopernicus, fig.margin = TRUE, fig.cap = "Nicolaus Copernicus, one of the all time Polish shining star is aptly stationed in the old town area stands tall in front of the Staszic Palace, the seat of the Polish Academy of Sciences on [[Krakowskie Przedmieście](https://en.wikipedia.org/wiki/Krakowskie_Przedmieście)].", message=TRUE, cache=TRUE, echo=FALSE, out.width='100%'}
+
+```{r figCopernicus, fig.margin = TRUE, fig.cap = "The statue of Nicolaus Copernicus, one of Poland's most celebrated figures, stands prominently in the old town area in front of the Staszic Palace, home to the Polish Academy of Sciences on [Krakowskie Przedmieście](https://en.wikipedia.org/wiki/Krakowskie_Przedmieście).", message=TRUE, cache=TRUE, echo=FALSE, out.width='100%'}
 knitr::include_graphics("/Users/rethna/projects/blog/warsaw_plato/warsaw_copernicus.jpg")
 ```
 
 
-```{r figChopin, fig.margin = TRUE, fig.cap = "Chopin museum[[Muzeum Fryderyka Chopina](https://en.wikipedia.org/wiki/Fryderyk_Chopin_Museum)]. Frédéric Chopin is Poland's absolute favorite son. I'd imagine Copernicus and Maria Skłodowska-Curie are right up there in the Polish hall of fame.", message=TRUE, cache=TRUE, echo=FALSE, out.width='100%'}
+```{r figChopin, fig.margin = TRUE, fig.cap = "Chopin museum,[Muzeum Fryderyka Chopina](https://en.wikipedia.org/wiki/Fryderyk_Chopin_Museum). Frédéric Chopin is Poland's absolute favorite son. I'd imagine Copernicus and Maria Skłodowska-Curie are right up there in the Polish hall of fame.", message=TRUE, cache=TRUE, echo=FALSE, out.width='100%'}
 knitr::include_graphics("/Users/rethna/projects/blog/warsaw_plato/warsaw_chopin.jpg")
 ```
 
@@ -110,32 +113,34 @@ The king's distinction between memory and mere "reminding" feels particularly pr
 Perhaps the most delicious irony of this entire encounter is that we only know about Thamus's critique of writing because Plato wrote it down. The very technology being criticized became the medium through which the criticism survived 2,400 years to reach a library wall in Warsaw, where a wandering traveler could photograph it, transcribe it, and share it globally via the internet.
 This paradox suggests something important about how we should approach new technologies. Neither uncritical adoption nor reflexive rejection serves us well. Instead, we need the kind of nuanced thinking that Plato himself demonstrated—using writing to preserve a critique of writing, showing us both its limitations and its power.
 
-# Lessons for Modern Times
-The Warsaw library's decision to inscribe this particular passage feels deliberate and wise. In an age of information overload, we need reminders that access to information is not the same as wisdom, that convenience can come with hidden costs, and that every technological advance involves trade-offs worth considering.
-Thamus's warning about people who "will appear to be omniscient and will generally know nothing" resonates strongly in our era of instant expertise and confident ignorance. The challenge isn't to reject new technologies but to use them thoughtfully, maintaining awareness of what we might be gaining and losing in the process.
 
-```{r figKafkaOut, fig.margin = TRUE, fig.cap = "Kaffe Kafka from outside. ", message=TRUE, cache=TRUE, echo=FALSE, out.width='100%'}
+```{r figKafkaOut, fig.margin = TRUE, fig.cap = "Cafe Kafka from outside. ", message=TRUE, cache=TRUE, echo=FALSE, out.width='100%'}
 knitr::include_graphics("/Users/rethna/projects/blog/warsaw_plato/warsaw_kafka_outside.jpg")
 ```
 # A Serendipitous Reminder
-My chance encounter with ancient Greek on a Warsaw library wall serves as a reminder that wisdom often finds us in unexpected places. Sometimes the most profound insights about our current moment come from voices across millennia, preserved through the very technologies they once questioned.
+The chance encounter with ancient Greek on a Warsaw university library wall serves as a reminder that wisdom often finds us in unexpected places. Sometimes the most profound insights about our current moment come from voices across millennia, preserved through the very technologies they once questioned.
 As I walked away from that library, I carried with me not just a transcribed passage but a renewed appreciation for the timeless nature of human concerns about change, progress, and the unintended consequences of innovation. In our rush toward the future, perhaps we need more walls with ancient wisdom, more moments of pause to consider what we're gaining and what we might be leaving behind.
-The gods Theuth and Thamus continue their dialogue through us, each generation wrestling anew with the promises and perils of its technologies. The conversation, thankfully, continues—preserved in writing, shared through networks, and discovered by wanderers in libraries around the world.
+The gods Theuth and Thamus continue their dialogue through us, each generation wrestling anew with the promises and perils of its technologies. The conversation, thankfully, continues—preserved in writing, shared through networks, and discovered by wanderers around the world.
 
-```{r figKafkaIn, fig.margin = TRUE, fig.cap = "Kaffe Kafka from inside. ", message=TRUE, cache=TRUE, echo=FALSE, out.width='100%'}
+```{r figKafkaIn, fig.margin = TRUE, fig.cap = "Cafe Kafka from inside. ", message=TRUE, cache=TRUE, echo=FALSE, out.width='100%'}
 knitr::include_graphics("/Users/rethna/projects/blog/warsaw_plato/warsaw_kafka_inside.jpg")
 ```
 
-# A final note
+# A Final note
 
 A few years back, I stood at this exact same wall, but then I was so captivated by Maxwell's equations that I barely noticed the Greek text. Among other things, I'd walk past Copernicus daily in Old Town regardless of weather, grab cappuccinos at the historic 115-year-old Cafe Bristol (supposedly where Marie Curie celebrated her second Nobel!), and catch street performances of Chopin's music. 
 
 I still have to write more on the other interesting items on the wall, but is for another day!
 
-## References
+# References
 
+::: {.fullwidth}
 <a name="ref1"></a>
 1. Plato. "(2025). Phaedrus [Project Gutenberg eBook] (B. Jowett, Trans.). http://www.gutenberg.org/files/1636/1636-h/1636-h.htm. Original text written approximately 370 BC.".
+
+<a name="ref2"></a>
+2. Plato. ["Phaedrus"](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0174:text=Phaedrus:page=274). Perseus Digital Library. p. 274. Retrieved 17 May 2025.
+:::
 
 
 ```{r bib, include=FALSE}
